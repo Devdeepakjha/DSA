@@ -1,0 +1,9 @@
+ PART_1 - contents
+
+-Basic manipulation, 
+-Traversal, 
+-min/max, 
+-reverse, 
+-rotation, 
+-counting, 
+-linear search

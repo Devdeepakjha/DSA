@@ -71,24 +71,10 @@
 // }
 
 
-//?  DAY 6   ?//   23rd may 2026
+
 //solved move zeroes "leetcode #283"
 //solved find number with even didgits "leetcode 289"
 
-
-
-
-
-// Find union of two arrays
-// Remove duplicates from sorted array
-// Insert element at position
-// Delete element from position
-// Find missing number from 1 to N
-// Find repeating element
-// Check palindrome array
-// Reverse subarray from L to R
-// Sort array of 0s and 1s
-// Alternate positive and negative numbers
 
 //Separate even and odd numbers
 //* NOTE:-
@@ -98,21 +84,3 @@
 // OR
 // swap instead of overwrite
 
-// #include<bits/stdc++.h>
-// using namespace std;
-// int main(){
-//     int arr[6] = {2, 7, 4, 5, 9, 8};
-//     int 1p = 0;
-//     int 2p = 0;
-//     for(int i=0; i<6; i++){
-//         if(arr[i] % 2 == 0){
-
-//         }
-//     }
-
-//     for(int i=0; i<6; i++){
-//         cout<<arr[i]<<" ";
-//     }
-
-//     return 0;
-// }

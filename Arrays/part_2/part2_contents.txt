@@ -1,0 +1,76 @@
+ARRAY PART_2 - Contents
+ │
+ ├── Frequency
+ ├── HashMap basics
+ ├── Prefix Sum
+ ├── Suffix
+ ├── Range Sum
+ ├── Subarrays
+ └── Prefix Sum + HashMap
+
+DETAILED
+
+2.1 — Frequency
+unordered_map
+declaration
+insertion
+accessing
+updating
+checking existence
+find()
+count()
+iteration
+[] behavior
+map vs unordered_map
+complexity
+
+
+2.2 — Prefix Sum
+prefix array
+construction
+range sum
+multiple range queries
+complexity
+prefix sum with indexing
+
+
+2.3 — Suffix
+suffix sum
+suffix min
+suffix max
+
+
+2.4 — Subarrays
+what is a subarray?
+generating subarrays
+number of subarrays
+brute-force subarray problems
+nested loops
+complexity analysis
+
+
+2.5 — Subarray Sum
+brute force
+improved brute force
+prefix sum
+prefix sum + hashmap
+
+
+2.6 — Hashmap patterns
+You'll start recognizing:
+frequency
+existence
+counting
+prefix sum + hashmap
+
+
+2.7 — STL integration
+We'll use:
+vector
+unordered_map
+unordered_set
+map
+set
+pair
+sort()
+reverse()
