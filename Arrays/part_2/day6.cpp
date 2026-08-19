@@ -67,23 +67,138 @@
 // }
 
 //! Q2) Find Frequency of all elemnent using hashmap(unordered_map)
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     vector<int> arr = {2, 5, 2, 3, 5, 2};
+
+//     unordered_map<int, int> freq;
+
+//     for (int x : arr)
+//     {
+//         freq[x]++;
+//     }
+
+//     for (auto p : freq)
+//     {
+//         cout << p.first << "->" << p.second << endl;
+//     }
+//     return 0;
+// }
+
+//! Q3) frequency of specific number
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     vector<int> arr = {2, 5, 2, 3, 5, 2};
+
+//     unordered_map<int, int> freq;
+
+//     for(int x : arr) freq[x]++;
+
+//     int n;
+//     cout<<"Enter element of which frequency is required: ";
+//     cin>>n;
+
+//     cout<< "The frequency of " << n << "->" << freq[n] << endl;
+
+//     return 0;
+
+// }
+
+//! Q4) find the first element whose frequency is exactly 1.
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     vector<int> arr = {2, 5, 2, 3, 5, 2};
+
+//     unordered_map<int, int> freq;
+
+//     for (int x : arr)
+//         freq[x]++;
+
+//     for (auto p : freq)
+//     {
+//         if (p.second == 1)
+//         {
+//             cout << p.first;
+//             break;
+//         }
+//     }
+
+//     return 0;
+// }
+
+//?Better solution as hashmap is very random if mutiple numbers have frequency = 1 , then it can print any of them not the first one surely...
+// our above code might give answer a '8' for this input {4, 7, 4, 8}
+// so loopin through array to maintain the sequence
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     vector<int> arr = {4, 7, 4, 8};
+
+//     unordered_map<int, int> freq;
+
+//     for (int x : arr)
+//         freq[x]++;
+
+//     for (int x : arr)
+//     {
+//         if (freq[x] == 1)
+//         {
+//             cout << x;
+//             break;
+//         }
+//     }
+
+//     return 0;
+// }
+
+//! Q5) find the frequency of largest element int the array
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     vector<int> arr = {2, 5, 7, 2, 3, 5, 7, 2, 7};
+
+//     unordered_map<int, int> freq;
+
+//     for (int x : arr)
+//         freq[x]++;
+
+//     // max_element returns an pointer not an actual number, so accessing it's actual value using '*'
+//     // auto automatically detect the datatype so that we don't need to worry about the syntax!
+//     auto it = max_element(arr.begin(), arr.end());
+
+//     cout << *it << " occurs " << freq[*it] << " times";
+//     return 0;
+// }
+
+
+//! Q6)Find the element with the highest frequency.
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-    vector<int> arr = {2, 5, 2, 3, 5, 2};
-
     unordered_map<int, int> freq;
-
+    vector<int> arr = {2, 5, 7, 2, 3, 5, 7, 2, 7};
     for (int x : arr)
-    {
         freq[x]++;
-    }
-
+    int max_freq = INT16_MIN;
+    int moszt_frequent_element = 0;
     for (auto p : freq)
     {
-        cout << p.first << "->" << p.second << endl;
+        if (p.second > max_freq)
+        {
+            max_freq = p.second;
+            moszt_frequent_element = p.first;
+        }
     }
+    cout << "element with the highest frequency: " << moszt_frequent_element;
+
     return 0;
 }
 
