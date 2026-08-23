@@ -69,21 +69,27 @@
 // }
 
 // Q3]   Prefix Maximum array for the given array
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-    vector<int> arr = {4, 2, 7, 1, 6, 3};
-    int n = arr.size();
-    vector<int> suffix_max(n);
-    suffix_max[n - 1] = arr[n - 1];
-    for (int i = n - 2; i >= 0; i--)
-    {
-        suffix_max[i] = max(suffix_max[i + 1], arr[i]);
-    }
-    for (int i = 0; i < n; i++)
-    {
-        cout << suffix_max[i] << " ";
-    }
-    return 0;
-}
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     vector<int> arr = {4, 2, 7, 1, 6, 3};
+//     int n = arr.size();
+//     vector<int> suffix_max(n);
+//     suffix_max[n - 1] = arr[n - 1];
+//     for (int i = n - 2; i >= 0; i--)
+//     {
+//         suffix_max[i] = max(suffix_max[i + 1], arr[i]);
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         cout << suffix_max[i] << " ";
+//     }
+//     return 0;
+// }
+
+//! Done leetcode 1480✅
+//! Done leetcode 724✅
+//! Done leetcode 1991✅
+
+
