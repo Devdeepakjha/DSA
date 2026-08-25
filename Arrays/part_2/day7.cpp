@@ -68,7 +68,7 @@
 //     }
 // }
 
-// Q3]   Prefix Maximum array for the given array
+// Q4]   suffix Maximum array for the given array
 // #include <bits/stdc++.h>
 // using namespace std;
 // int main()
