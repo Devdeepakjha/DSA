@@ -127,37 +127,59 @@ PREFIX SUM + HASHMAP
 //     return 0;
 // }
 
-
 //! Maximum Subarray sum (Bruteforce)
-#include <iostream>
-#include <vector>
+// #include <iostream>
+// #include <vector>
 
+// using namespace std;
+
+// int main()
+// {
+//     vector<int> arr = {1, 2, 3};
+//     int n = arr.size();
+//     int max_sum = INT32_MIN;
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         int sum = 0;
+
+//         for (int j = i; j < n; j++)
+//         {
+//             sum += arr[j];
+
+//             if(sum > max_sum){
+//                 max_sum = sum;
+//             }
+//         }
+//     }
+
+//     // Printing the final grand total at the very end
+//     cout << "\nmaximum Subarray sum is : " << max_sum << endl;
+
+//     return 0;
+// }
+
+//! kadane's Algorithm
+//? -> in this the which subarray is giving the max sum doesn't matter
+//? -> so we keep the calculating the sum in an normal array, and keep comparing it with the maxsum variable
+//? -> but if anytime the sum(current sum) is negative then make the sum 0, as adding that ive part will never result into the max sum!
+//? -> and in this way, we don't want that sum part that gives negative number, so ignoring that... and moving forward
+#include <bits/stdc++.h>
 using namespace std;
-
 int main()
 {
-    vector<int> arr = {1, 2, 3};
+    vector<int> arr = {-2, 1, -3, 4, -1, 2, 1};
     int n = arr.size();
-    int max_sum = INT32_MIN; 
-
+    int curr_sum = 0;
+    int max_sum = INT_MIN;
     for (int i = 0; i < n; i++)
     {
-        int sum = 0;
-
-        for (int j = i; j < n; j++)
-        {
-            sum += arr[j];
-
-            if(sum > max_sum){
-                max_sum = sum;
-            }
-        }
+        curr_sum += arr[i];
+        max_sum = max(curr_sum, max_sum); // curr_sum or max_Sum me se jo bada hoga, voh max_sum new updated value hogi!
+        if (curr_sum < 0)
+            curr_sum = 0; // ignoring that summation(subarray like...) which gives -ve sum!
     }
-
-    // Printing the final grand total at the very end
-    cout << "\nmaximum Subarray sum is : " << max_sum << endl;
-
-    return 0;
+    cout << max_sum;
 }
 
-//!leetcode 53 -> with bruteforce (big oh of n square) and kadane's algorithm (big oh of n)
+//! leetcode 53 -> with bruteforce (big oh of n square) and kadane's algorithm (big oh of n)
