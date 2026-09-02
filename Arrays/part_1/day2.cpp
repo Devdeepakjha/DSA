@@ -81,7 +81,7 @@
 // }
 
 //// 16]Count frequency of a number and Count duplicates also        "VERY EASY QUESTION"
-//* NOTE :- duplicate is when frequency > 1
+//* NOTE :- duplicate is when frequency -> 1
 
 //! 18]Find largest among first and last
 // #include<bits/stdc++.h>

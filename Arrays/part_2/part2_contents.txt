@@ -1,10 +1,10 @@
 ARRAY PART_2 - Contents
  │
- ├── Frequency
- ├── HashMap basics
- ├── Prefix Sum
- ├── Suffix
- ├── Range Sum
+ ├── Frequency -> day6
+ ├── HashMap basics -> day6
+ ├── Prefix and prefix Sum -> day7
+ ├── Suffix and suffix sum -> day7
+ ├── Range Sum -> day8
  ├── Subarrays
  └── Prefix Sum + HashMap
 
