@@ -79,7 +79,7 @@
 
 //     for (int x : arr)
 //     {
-//         freq[x]++;
+//         freq[x]++;      //mene x as key dala with value of that as ++ means 1 increase everytime 
 //     }
 
 //     for (auto p : freq)
