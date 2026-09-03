@@ -159,7 +159,7 @@ PREFIX SUM + HASHMAP
 //     return 0;
 // }
 
-//! kadane's Algorithm
+//! kadane's Algorithm⭐
 //? -> in this the which subarray is giving the max sum doesn't matter
 //? -> so we keep the calculating the sum in an normal array, and keep comparing it with the maxsum variable
 //? -> but if anytime the sum(current sum) is negative then make the sum 0, as adding that ive part will never result into the max sum!
@@ -182,4 +182,10 @@ int main()
     cout << max_sum;
 }
 
-//! leetcode 53 -> with bruteforce (big oh of n square) and kadane's algorithm (big oh of n)
+//! leetcode 53 ✅ -> with bruteforce (big oh of n square) and kadane's algorithm (big oh of n)
+
+
+//!PREFIX SUM + HASHMAP⭐⭐⭐⭐⭐
+//?it help's us to solve multipe type of subarrays quesstion
+
+
